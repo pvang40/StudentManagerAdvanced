@@ -24,7 +24,7 @@ void student::addGrade(double input)
 }
 
 double student::getScore()
-{   double finalGrade;
+{   double finalGrade=0;
     double number=0; 
     for(int i = 0 ; i<grades.size(); i++)
     {
