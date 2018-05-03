@@ -1,7 +1,7 @@
 #include "student.h" 
 #include <string> 
 #include <iostream> 
-
+#include <vector>
 using namespace std; 
 
 void student::setName(string firstInput, string lastInput) 
@@ -17,13 +17,19 @@ string student::fullName()
                return first;
                } 
                    
-void student::addGrade(double value); 
+void student::addGrade(double input) 
 {
-
+    grades.push_back(input);      
 
 }
 
-double student::getScore(); 
-{
-
+double student::getScore()
+{   int finalGrade;
+    int number=0; 
+    for(int i = 0 ; i<grades.size(); i++)
+    {
+    number = number + grades[i]; 
+    } 
+    finalGrade = number/grades.size(); 
+    return finalGrade; 
 } 

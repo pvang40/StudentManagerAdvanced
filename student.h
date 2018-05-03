@@ -2,14 +2,14 @@
 #define STUDENT_H 
 #include <string>
 #include <iostream> 
-
+#include <vector>
 
 class student 
 { 
     private:
     std::string last; 
     std::string first; 
-    vector<double>; 
+    std::vector< double > grades; 
 
     public:
     std::string fullName();      
