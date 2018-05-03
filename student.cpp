@@ -30,6 +30,14 @@ double student::getScore()
     {
     number = number + grades[i]; 
     } 
-    finalGrade = number/grades.size(); 
+    if(grades.size() !=0)
+    {
+  finalGrade = number/grades.size(); 
     return finalGrade; 
+    } 
+    else 
+    { 
+    return finalGrade = 0; 
+    
+    }
 } 
